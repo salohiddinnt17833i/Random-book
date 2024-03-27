@@ -16,11 +16,12 @@ function App() {
     });
     setAllData(addId)
   }, [])
+
+
   function handleRandom() {
     let randomIndex = Math.floor(Math.random() * data.length);
     let randomBook = data[randomIndex];
     setBook(randomBook)
-    console.log(book);
   }
 
   return (
